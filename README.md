@@ -1,2 +1,21 @@
-# fml_project
-Testing several models on a dataset
+# Fundamentals of Machine Learning Project
+
+- The goal of the project is to take at least 3 out‐of‐the‐box models and apply them to a selected dataset.
+- The  dataset  can  be  taken  from  Kaggle  (https://www.kaggle.com/datasets)  or  can  be  a personal one. 
+- Recommended to work in team of 2 members (but you can have individual projects) 
+- First, you will build intuition  for model‐to‐problem  fit. Which models are robust  to missing data?  Which  models  handle  categorical  features  well?  Yes,  you  can  dig  through lectures/textbooks/tutorials  to  find  the  answers,  but  you  will  learn  better  by  seeing  it  in action. 
+- Second, this project will teach you the invaluable skill of prototyping models quickly. In the real world, it is often difficult to know which model will perform best without simply trying them. 
+- Finally, this exercise helps you master the workflow of model building. For example, you will get to practice:
+  - Importing data 
+  - Cleaning data 
+  - Splitting it into train/test or cross‐validation sets
+  - Pre‐processing
+  - Transformations
+  - Feature engineering
+- Write a report (no more than 10 pages) with all the steps you made, together with the results you obtain at each step. The report must contain:
+  - Introduction (the problem description)
+  - Data (Description, pre‐processing methods, …)
+  - Algorithms (pros and cons observation for each algorithm you used)
+  - Results
+  - Conclusions 
+- Write  a  presentation  (10  slides)  which  emphasizes  the  interesting  aspects  you  encounter during the development of the project together with the results you obtain. 
