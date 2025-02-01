@@ -1,0 +1,28 @@
+# Ignore all logs and models folders recursively
+**/logs/
+**/models/
+
+# Ignore logs and models directories for all models
+logistic_regression/logs/
+logistic_regression/models/
+
+neural_network/logs/
+neural_network/models/
+
+random_forest/logs/
+random_forest/models/
+
+support_vector_machine/logs/
+support_vector_machine/models/
+
+# Ignore dataset.csv (if you want to track only preprocessing scripts)
+dataset/dataset.csv
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+Thumbs.db

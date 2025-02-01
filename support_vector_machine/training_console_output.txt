@@ -1,0 +1,55 @@
+Training with batch size 8
+
+
+[INFO] Training SVM with batch size 8
+[INFO] Training complete. Logs saved in logs/svm/batch_8/20250201-161434
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.28      0.23      0.25       105
+         1.0       0.14      0.18      0.15        74
+
+    accuracy                           0.21       179
+   macro avg       0.21      0.20      0.20       179
+weighted avg       0.22      0.21      0.21       179
+
+Model saved to models/svm_batch_8.joblib
+
+
+Training with batch size 16
+
+
+[INFO] Training SVM with batch size 16
+[INFO] Training complete. Logs saved in logs/svm/batch_16/20250201-161434
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.76      0.64      0.69       105
+         1.0       0.58      0.72      0.64        74
+
+    accuracy                           0.67       179
+   macro avg       0.67      0.68      0.67       179
+weighted avg       0.69      0.67      0.67       179
+
+Model saved to models/svm_batch_16.joblib
+
+
+Training with batch size 32
+
+
+[INFO] Training SVM with batch size 32
+[INFO] Training complete. Logs saved in logs/svm/batch_32/20250201-161434
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.83      0.73      0.78       105
+         1.0       0.67      0.78      0.72        74
+
+    accuracy                           0.75       179
+   macro avg       0.75      0.76      0.75       179
+weighted avg       0.76      0.75      0.76       179
+
+Model saved to models/svm_batch_32.joblib

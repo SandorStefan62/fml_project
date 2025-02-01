@@ -1,0 +1,205 @@
+Training with 10 epochs and batch size 8
+
+
+[INFO] Training model for 10 epochs with batch size 8
+Epoch [5/10] | Train Loss: 0.4737 | Train Acc: 0.7823 | Test Loss: 0.4528 | Test Acc: 0.7877
+Epoch [10/10] | Train Loss: 0.4553 | Train Acc: 0.7935 | Test Loss: 0.4531 | Test Acc: 0.8101
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_10_batch_8/20250201-145607
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.89      0.85       105
+         1.0       0.81      0.70      0.75        74
+
+    accuracy                           0.81       179
+   macro avg       0.81      0.79      0.80       179
+weighted avg       0.81      0.81      0.81       179
+
+Model saved to models/nn_epochs_10_batch_8.pth
+
+
+Training with 10 epochs and batch size 16
+
+
+[INFO] Training model for 10 epochs with batch size 16
+Epoch [5/10] | Train Loss: 0.5141 | Train Acc: 0.7669 | Test Loss: 0.4836 | Test Acc: 0.8156
+Epoch [10/10] | Train Loss: 0.4636 | Train Acc: 0.8020 | Test Loss: 0.4582 | Test Acc: 0.7989
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_10_batch_16/20250201-145608
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.85      0.83       105
+         1.0       0.77      0.73      0.75        74
+
+    accuracy                           0.80       179
+   macro avg       0.79      0.79      0.79       179
+weighted avg       0.80      0.80      0.80       179
+
+Model saved to models/nn_epochs_10_batch_16.pth
+
+
+Training with 10 epochs and batch size 32
+
+
+[INFO] Training model for 10 epochs with batch size 32
+Epoch [5/10] | Train Loss: 0.5862 | Train Acc: 0.6713 | Test Loss: 0.5623 | Test Acc: 0.6704
+Epoch [10/10] | Train Loss: 0.4888 | Train Acc: 0.7767 | Test Loss: 0.4678 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_10_batch_32/20250201-145609
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.79      0.85      0.82       105
+         1.0       0.76      0.69      0.72        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/nn_epochs_10_batch_32.pth
+
+
+Training with 20 epochs and batch size 8
+
+
+[INFO] Training model for 20 epochs with batch size 8
+Epoch [5/20] | Train Loss: 0.4808 | Train Acc: 0.7921 | Test Loss: 0.4519 | Test Acc: 0.8045
+Epoch [10/20] | Train Loss: 0.4399 | Train Acc: 0.8090 | Test Loss: 0.4487 | Test Acc: 0.7989
+Epoch [15/20] | Train Loss: 0.4392 | Train Acc: 0.8034 | Test Loss: 0.4544 | Test Acc: 0.7989
+Epoch [20/20] | Train Loss: 0.4054 | Train Acc: 0.8230 | Test Loss: 0.4466 | Test Acc: 0.7933
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_20_batch_8/20250201-145609
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.87      0.83       105
+         1.0       0.78      0.69      0.73        74
+
+    accuracy                           0.79       179
+   macro avg       0.79      0.78      0.78       179
+weighted avg       0.79      0.79      0.79       179
+
+Model saved to models/nn_epochs_20_batch_8.pth
+
+
+Training with 20 epochs and batch size 16
+
+
+[INFO] Training model for 20 epochs with batch size 16
+Epoch [5/20] | Train Loss: 0.5327 | Train Acc: 0.7542 | Test Loss: 0.5081 | Test Acc: 0.7821
+Epoch [10/20] | Train Loss: 0.4618 | Train Acc: 0.7935 | Test Loss: 0.4733 | Test Acc: 0.8045
+Epoch [15/20] | Train Loss: 0.4678 | Train Acc: 0.7992 | Test Loss: 0.4636 | Test Acc: 0.7877
+Epoch [20/20] | Train Loss: 0.4549 | Train Acc: 0.8048 | Test Loss: 0.4802 | Test Acc: 0.7989
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_20_batch_16/20250201-145612
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.88      0.84       105
+         1.0       0.80      0.69      0.74        74
+
+    accuracy                           0.80       179
+   macro avg       0.80      0.78      0.79       179
+weighted avg       0.80      0.80      0.80       179
+
+Model saved to models/nn_epochs_20_batch_16.pth
+
+
+Training with 20 epochs and batch size 32
+
+
+[INFO] Training model for 20 epochs with batch size 32
+Epoch [5/20] | Train Loss: 0.5614 | Train Acc: 0.7149 | Test Loss: 0.5410 | Test Acc: 0.7486
+Epoch [10/20] | Train Loss: 0.4726 | Train Acc: 0.7893 | Test Loss: 0.4521 | Test Acc: 0.7989
+Epoch [15/20] | Train Loss: 0.4808 | Train Acc: 0.8062 | Test Loss: 0.4563 | Test Acc: 0.8045
+Epoch [20/20] | Train Loss: 0.4416 | Train Acc: 0.8006 | Test Loss: 0.4620 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_20_batch_32/20250201-145613
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.83      0.82       105
+         1.0       0.75      0.72      0.73        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/nn_epochs_20_batch_32.pth
+
+
+Training with 30 epochs and batch size 8
+
+
+[INFO] Training model for 30 epochs with batch size 8
+Epoch [5/30] | Train Loss: 0.4874 | Train Acc: 0.7851 | Test Loss: 0.4616 | Test Acc: 0.7765
+Epoch [10/30] | Train Loss: 0.4411 | Train Acc: 0.8048 | Test Loss: 0.4603 | Test Acc: 0.7933
+Epoch [15/30] | Train Loss: 0.4292 | Train Acc: 0.8146 | Test Loss: 0.4626 | Test Acc: 0.7933
+Epoch [20/30] | Train Loss: 0.4263 | Train Acc: 0.8216 | Test Loss: 0.4575 | Test Acc: 0.7933
+Epoch [25/30] | Train Loss: 0.4296 | Train Acc: 0.8202 | Test Loss: 0.4648 | Test Acc: 0.8045
+Epoch [30/30] | Train Loss: 0.4230 | Train Acc: 0.8146 | Test Loss: 0.4684 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_30_batch_8/20250201-145614
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.79      0.86      0.82       105
+         1.0       0.77      0.68      0.72        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/nn_epochs_30_batch_8.pth
+
+
+Training with 30 epochs and batch size 16
+
+
+[INFO] Training model for 30 epochs with batch size 16
+Epoch [5/30] | Train Loss: 0.5048 | Train Acc: 0.7697 | Test Loss: 0.4828 | Test Acc: 0.8045
+Epoch [10/30] | Train Loss: 0.4659 | Train Acc: 0.7978 | Test Loss: 0.4701 | Test Acc: 0.7877
+Epoch [15/30] | Train Loss: 0.4588 | Train Acc: 0.7921 | Test Loss: 0.4823 | Test Acc: 0.7933
+Epoch [20/30] | Train Loss: 0.4443 | Train Acc: 0.8216 | Test Loss: 0.4854 | Test Acc: 0.8101
+Epoch [25/30] | Train Loss: 0.4360 | Train Acc: 0.8118 | Test Loss: 0.4828 | Test Acc: 0.7933
+Epoch [30/30] | Train Loss: 0.4161 | Train Acc: 0.8216 | Test Loss: 0.4895 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_30_batch_16/20250201-145618
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.79      0.86      0.82       105
+         1.0       0.77      0.68      0.72        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/nn_epochs_30_batch_16.pth
+
+
+Training with 30 epochs and batch size 32
+
+
+[INFO] Training model for 30 epochs with batch size 32
+Epoch [5/30] | Train Loss: 0.5617 | Train Acc: 0.6896 | Test Loss: 0.5372 | Test Acc: 0.7542
+Epoch [10/30] | Train Loss: 0.5015 | Train Acc: 0.7697 | Test Loss: 0.4668 | Test Acc: 0.8045
+Epoch [15/30] | Train Loss: 0.4550 | Train Acc: 0.7907 | Test Loss: 0.4453 | Test Acc: 0.8045
+Epoch [20/30] | Train Loss: 0.4393 | Train Acc: 0.8048 | Test Loss: 0.4446 | Test Acc: 0.8045
+Epoch [25/30] | Train Loss: 0.4249 | Train Acc: 0.8048 | Test Loss: 0.4486 | Test Acc: 0.7989
+Epoch [30/30] | Train Loss: 0.4382 | Train Acc: 0.8020 | Test Loss: 0.4525 | Test Acc: 0.7989
+[INFO] Training complete. Logs saved in logs/neural_network/epochs_30_batch_32/20250201-145620
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.87      0.83       105
+         1.0       0.79      0.70      0.74        74
+
+    accuracy                           0.80       179
+   macro avg       0.80      0.78      0.79       179
+weighted avg       0.80      0.80      0.80       179
+
+Model saved to models/nn_epochs_30_batch_32.pth

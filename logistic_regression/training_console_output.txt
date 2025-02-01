@@ -1,0 +1,265 @@
+Training with 5 epochs and batch size 8
+
+
+[INFO] Training logistic regression for 5 epochs with batch size 8
+Epoch [5/5] | Train Loss: 0.4944 | Train Acc: 0.7837 | Test Loss: 0.4609 | Test Acc: 0.8101
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_5_batch_8/20250201-160246
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.90      0.85       105
+         1.0       0.83      0.68      0.75        74
+
+    accuracy                           0.81       179
+   macro avg       0.82      0.79      0.80       179
+weighted avg       0.81      0.81      0.81       179
+
+Model saved to models/logreg_epochs_5_batch_8.pth
+
+
+Training with 5 epochs and batch size 16
+
+
+[INFO] Training logistic regression for 5 epochs with batch size 16
+Epoch [5/5] | Train Loss: 0.4883 | Train Acc: 0.7809 | Test Loss: 0.5104 | Test Acc: 0.7765
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_5_batch_16/20250201-160246
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.97      0.84       105
+         1.0       0.93      0.50      0.65        74
+
+    accuracy                           0.78       179
+   macro avg       0.83      0.74      0.74       179
+weighted avg       0.81      0.78      0.76       179
+
+Model saved to models/logreg_epochs_5_batch_16.pth
+
+
+Training with 5 epochs and batch size 32
+
+
+[INFO] Training logistic regression for 5 epochs with batch size 32
+Epoch [5/5] | Train Loss: 0.5117 | Train Acc: 0.7739 | Test Loss: 0.4992 | Test Acc: 0.8156
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_5_batch_32/20250201-160246
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.90      0.85       105
+         1.0       0.84      0.69      0.76        74
+
+    accuracy                           0.82       179
+   macro avg       0.82      0.80      0.80       179
+weighted avg       0.82      0.82      0.81       179
+
+Model saved to models/logreg_epochs_5_batch_32.pth
+
+
+Training with 10 epochs and batch size 8
+
+
+[INFO] Training logistic regression for 10 epochs with batch size 8
+Epoch [5/10] | Train Loss: 0.4850 | Train Acc: 0.8076 | Test Loss: 0.5271 | Test Acc: 0.7821
+Epoch [10/10] | Train Loss: 0.4731 | Train Acc: 0.7949 | Test Loss: 0.4424 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_10_batch_8/20250201-160247
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.82      0.82       105
+         1.0       0.74      0.73      0.73        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/logreg_epochs_10_batch_8.pth
+
+
+Training with 10 epochs and batch size 16
+
+
+[INFO] Training logistic regression for 10 epochs with batch size 16
+Epoch [5/10] | Train Loss: 0.4910 | Train Acc: 0.7893 | Test Loss: 0.4599 | Test Acc: 0.8045
+Epoch [10/10] | Train Loss: 0.4711 | Train Acc: 0.8048 | Test Loss: 0.4393 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_10_batch_16/20250201-160247
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.84      0.82       105
+         1.0       0.75      0.70      0.73        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/logreg_epochs_10_batch_16.pth
+
+
+Training with 10 epochs and batch size 32
+
+
+[INFO] Training logistic regression for 10 epochs with batch size 32
+Epoch [5/10] | Train Loss: 0.5104 | Train Acc: 0.7795 | Test Loss: 0.5679 | Test Acc: 0.7486
+Epoch [10/10] | Train Loss: 0.4855 | Train Acc: 0.7865 | Test Loss: 0.4473 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_10_batch_32/20250201-160247
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.84      0.82       105
+         1.0       0.75      0.70      0.73        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/logreg_epochs_10_batch_32.pth
+
+
+Training with 20 epochs and batch size 8
+
+
+[INFO] Training logistic regression for 20 epochs with batch size 8
+Epoch [5/20] | Train Loss: 0.5072 | Train Acc: 0.7683 | Test Loss: 0.4528 | Test Acc: 0.7877
+Epoch [10/20] | Train Loss: 0.4728 | Train Acc: 0.8034 | Test Loss: 0.4580 | Test Acc: 0.7877
+Epoch [15/20] | Train Loss: 0.4946 | Train Acc: 0.7767 | Test Loss: 0.4868 | Test Acc: 0.7821
+Epoch [20/20] | Train Loss: 0.4588 | Train Acc: 0.8006 | Test Loss: 0.4240 | Test Acc: 0.8324
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_20_batch_8/20250201-160248
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.83      0.90      0.86       105
+         1.0       0.84      0.73      0.78        74
+
+    accuracy                           0.83       179
+   macro avg       0.83      0.82      0.82       179
+weighted avg       0.83      0.83      0.83       179
+
+Model saved to models/logreg_epochs_20_batch_8.pth
+
+
+Training with 20 epochs and batch size 16
+
+
+[INFO] Training logistic regression for 20 epochs with batch size 16
+Epoch [5/20] | Train Loss: 0.4978 | Train Acc: 0.7879 | Test Loss: 0.4801 | Test Acc: 0.7765
+Epoch [10/20] | Train Loss: 0.4913 | Train Acc: 0.7851 | Test Loss: 0.4466 | Test Acc: 0.7877
+Epoch [15/20] | Train Loss: 0.4841 | Train Acc: 0.7893 | Test Loss: 0.4777 | Test Acc: 0.7877
+Epoch [20/20] | Train Loss: 0.4749 | Train Acc: 0.7893 | Test Loss: 0.4294 | Test Acc: 0.7933
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_20_batch_16/20250201-160249
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.84      0.83       105
+         1.0       0.76      0.73      0.74        74
+
+    accuracy                           0.79       179
+   macro avg       0.79      0.78      0.79       179
+weighted avg       0.79      0.79      0.79       179
+
+Model saved to models/logreg_epochs_20_batch_16.pth
+
+
+Training with 20 epochs and batch size 32
+
+
+[INFO] Training logistic regression for 20 epochs with batch size 32
+Epoch [5/20] | Train Loss: 0.5156 | Train Acc: 0.7697 | Test Loss: 0.4760 | Test Acc: 0.7821
+Epoch [10/20] | Train Loss: 0.4772 | Train Acc: 0.7865 | Test Loss: 0.4511 | Test Acc: 0.7821
+Epoch [15/20] | Train Loss: 0.4717 | Train Acc: 0.7879 | Test Loss: 0.4515 | Test Acc: 0.7709
+Epoch [20/20] | Train Loss: 0.4858 | Train Acc: 0.7921 | Test Loss: 0.4444 | Test Acc: 0.7765
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_20_batch_32/20250201-160250
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.81      0.81       105
+         1.0       0.73      0.73      0.73        74
+
+    accuracy                           0.78       179
+   macro avg       0.77      0.77      0.77       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/logreg_epochs_20_batch_32.pth
+
+
+Training with 30 epochs and batch size 8
+
+
+[INFO] Training logistic regression for 30 epochs with batch size 8
+Epoch [5/30] | Train Loss: 0.5019 | Train Acc: 0.7809 | Test Loss: 0.4439 | Test Acc: 0.7821
+Epoch [10/30] | Train Loss: 0.4800 | Train Acc: 0.7949 | Test Loss: 0.4211 | Test Acc: 0.8045
+Epoch [15/30] | Train Loss: 0.4848 | Train Acc: 0.7865 | Test Loss: 0.4230 | Test Acc: 0.8045
+Epoch [20/30] | Train Loss: 0.4845 | Train Acc: 0.7992 | Test Loss: 0.4235 | Test Acc: 0.7989
+Epoch [25/30] | Train Loss: 0.4823 | Train Acc: 0.7823 | Test Loss: 0.4217 | Test Acc: 0.7933
+Epoch [30/30] | Train Loss: 0.4877 | Train Acc: 0.7893 | Test Loss: 0.4333 | Test Acc: 0.8101
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_30_batch_8/20250201-160250
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.87      0.84       105
+         1.0       0.79      0.73      0.76        74
+
+    accuracy                           0.81       179
+   macro avg       0.81      0.80      0.80       179
+weighted avg       0.81      0.81      0.81       179
+
+Model saved to models/logreg_epochs_30_batch_8.pth
+
+
+Training with 30 epochs and batch size 16
+
+
+[INFO] Training logistic regression for 30 epochs with batch size 16
+Epoch [5/30] | Train Loss: 0.4944 | Train Acc: 0.7626 | Test Loss: 0.5979 | Test Acc: 0.7374
+Epoch [10/30] | Train Loss: 0.4933 | Train Acc: 0.7935 | Test Loss: 0.4511 | Test Acc: 0.7877
+Epoch [15/30] | Train Loss: 0.4847 | Train Acc: 0.7949 | Test Loss: 0.4239 | Test Acc: 0.7765
+Epoch [20/30] | Train Loss: 0.4707 | Train Acc: 0.7963 | Test Loss: 0.4368 | Test Acc: 0.7989
+Epoch [25/30] | Train Loss: 0.4664 | Train Acc: 0.7907 | Test Loss: 0.5124 | Test Acc: 0.7989
+Epoch [30/30] | Train Loss: 0.4664 | Train Acc: 0.7879 | Test Loss: 0.4758 | Test Acc: 0.8101
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_30_batch_16/20250201-160252
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.90      0.85       105
+         1.0       0.83      0.68      0.75        74
+
+    accuracy                           0.81       179
+   macro avg       0.82      0.79      0.80       179
+weighted avg       0.81      0.81      0.81       179
+
+Model saved to models/logreg_epochs_30_batch_16.pth
+
+
+Training with 30 epochs and batch size 32
+
+
+[INFO] Training logistic regression for 30 epochs with batch size 32
+Epoch [5/30] | Train Loss: 0.5056 | Train Acc: 0.7654 | Test Loss: 0.4775 | Test Acc: 0.7989
+Epoch [10/30] | Train Loss: 0.4777 | Train Acc: 0.8006 | Test Loss: 0.4624 | Test Acc: 0.7709
+Epoch [15/30] | Train Loss: 0.4766 | Train Acc: 0.7978 | Test Loss: 0.4535 | Test Acc: 0.7821
+Epoch [20/30] | Train Loss: 0.4642 | Train Acc: 0.8006 | Test Loss: 0.5411 | Test Acc: 0.7430
+Epoch [25/30] | Train Loss: 0.4643 | Train Acc: 0.7949 | Test Loss: 0.4509 | Test Acc: 0.8212
+Epoch [30/30] | Train Loss: 0.4603 | Train Acc: 0.7949 | Test Loss: 0.4523 | Test Acc: 0.7821
+[INFO] Training complete. Logs saved in logs/logistic_regression/epochs_30_batch_32/20250201-160253
+
+Final Model Evaluation on Test Data:
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.80      0.81       105
+         1.0       0.73      0.76      0.74        74
+
+    accuracy                           0.78       179
+   macro avg       0.78      0.78      0.78       179
+weighted avg       0.78      0.78      0.78       179
+
+Model saved to models/logreg_epochs_30_batch_32.pth
