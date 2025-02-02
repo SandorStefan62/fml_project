@@ -12,9 +12,12 @@ from datetime import datetime
 from torch.utils.tensorboard import SummaryWriter
 from dataset import get_data_loaders
 import torch
+from visualization.confusion_matrix import plot_confusion_matrix
+import time
 
 class TitanicRandomForest:
     def __init__(self, n_estimators=200, max_depth=10, min_samples_split=10, min_samples_leaf=5, class_weight="balanced", max_features="sqrt", random_state=42):
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = RandomForestClassifier(
             n_estimators=n_estimators,
             max_depth=max_depth,
@@ -73,6 +76,17 @@ class TitanicRandomForest:
         os.makedirs(filepath, exist_ok=True)
         joblib.dump(self.model, f'{filepath}/{self.model_name}.joblib')
 
+    def nr_of_params(self):
+        print(f"Number of Estimators: {len(self.model.estimators_)}")
+
+    def compute_confusion_matrix(self, test_loader, name):
+        X_test = torch.cat([batch[0] for batch in test_loader]).numpy()
+        y_test = torch.cat([batch[1] for batch in test_loader]).numpy()
+        predictions = self.model.predict(X_test)
+
+        #plot_confusion_matrix
+        plot_confusion_matrix(y_test, predictions, class_names=["Did Not Survive", "Survived"], name=name)
+
 def main():
         # Load the data
         train_loader, test_loader, input_dim = get_data_loaders("../dataset/dataset.csv")
@@ -80,17 +94,31 @@ def main():
         # Initialize model
         rf_model = TitanicRandomForest()
 
+        # Measure training time
+        start_time = time.time()
+
         # Train the model with specific parameters
         train_acc, test_acc = rf_model.train(train_loader, test_loader)
+
+        end_time = time.time()
 
         # Evaluate the model
         print("\nFinal Model Evaluation on Test Data:")
         print(rf_model.evaluate(test_loader))
 
+        # Nr of parameters
+        rf_model.nr_of_params()
+
         # Save the model for each batch size
         model_name = f"models/rf_model.joblib"
         rf_model.save_model(model_name)
         print(f"Model saved to {model_name}\n")
+
+        # Compute confusion matrix
+        rf_model.compute_confusion_matrix(test_loader, "random_forest")
+
+        # Print the training time
+        print(f"Training time: {end_time - start_time} seconds")
 
 if __name__ == "__main__":
     main()

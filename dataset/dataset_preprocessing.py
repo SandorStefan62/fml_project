@@ -68,7 +68,6 @@ def preprocess_data(data, for_rf = False):
 
     # Scale numeric features
     if for_rf == False:
-        print("am intrat")
         scaler = StandardScaler()
         df[numeric_features] = scaler.fit_transform(df[numeric_features])
 

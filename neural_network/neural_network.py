@@ -9,6 +9,8 @@ from torch.utils.tensorboard import SummaryWriter
 from sklearn.metrics import classification_report
 from datetime import datetime
 from dataset import get_data_loaders
+from visualization.confusion_matrix import plot_confusion_matrix
+import time
 
 class TitanicNet(nn.Module):
     def __init__(self, input_dim):
@@ -123,6 +125,23 @@ class TitanicNeuralNetwork:
         os.makedirs(filepath, exist_ok=True)
         torch.save(self.model.state_dict(), f'{filepath}/{self.model_name}.pth')
 
+    def nr_of_params(self):
+        total_params = sum(p.numel() for p in self.model.parameters())
+        print(f"Total Parameters: {total_params}")
+
+    def compute_confusion_matrix(self, test_loader, name):
+        all_predictions, all_targets = [], []
+
+        for inputs, targets in test_loader:
+            inputs = inputs.to(self.device)
+            outputs = self.model(inputs).squeeze()
+            predicted = (outputs > 0.5).float().cpu()
+            all_predictions.extend(predicted.numpy())
+            all_targets.extend(targets.numpy())
+
+        #plot_confusion_matrix
+        plot_confusion_matrix(all_targets, all_predictions, class_names=["Did Not Survive", "Survived"], name=name)
+
 def main():
     epochs = [10, 20, 30]
     batch_sizes = [8, 16, 32]
@@ -137,17 +156,31 @@ def main():
             # Initialize model
             nn_model = TitanicNeuralNetwork(input_dim)
 
+            # Measure training time
+            start_time = time.time()
+
             # Train the model with specific parameters
             train_acc, test_acc = nn_model.train(train_loader, test_loader, epochs=epochs, batch_size=batch_size)
+
+            end_time = time.time()
 
             # Evaluate the model
             print("\nFinal Model Evaluation on Test Data:")
             print(nn_model.evaluate(test_loader))
 
+            # Nr of parameters
+            nn_model.nr_of_params()
+
             # Save the model for each combination of parameters
             model_name = f'models/nn_epochs_{epochs}_batch_{batch_size}.pth'
             nn_model.save_model(model_name)
             print(f"Model saved to {model_name}\n")
+
+            # Compute confusion matrix
+            nn_model.compute_confusion_matrix(test_loader, f"neural_network_epochs_{epochs}_batch_{batch_size}")
+
+            # Print the training time
+            print(f"Training time for {epochs} epochs and batch size {batch_size}: {end_time - start_time} seconds")
 
 if __name__ == "__main__":
     main()

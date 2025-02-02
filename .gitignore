@@ -1,6 +1,7 @@
 # Ignore all logs and models folders recursively
 **/logs/
 **/models/
+**/plots/
 
 # Ignore logs and models directories for all models
 logistic_regression/logs/
